@@ -7,82 +7,93 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-      color: #333;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #1a1a1a;
       margin: 0;
       padding: 0;
     }
     header, footer {
-      background-color: #6a0572;
+      background-color: #1abc9c;
       color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
     .container {
-      max-width: 700px;
+      max-width: 900px;
       margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     }
     .input-group {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
     }
     .input-group input {
-      width: 60px;
-      padding: 0.5rem;
+      width: 80px;
+      padding: 0.6rem;
       font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+      border-radius: 6px;
+      border: 1px solid #bbb;
       margin-right: 10px;
     }
     .btn {
-      padding: 0.7rem 1.2rem;
+      padding: 0.8rem 1.6rem;
       font-size: 1rem;
-      background-color: #a83279;
+      background-color: #e67e22;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
     }
     .btn:hover {
-      background-color: #8b2e68;
+      background-color: #d35400;
     }
     .result {
-      margin-top: 1.5rem;
-      font-size: 1.2rem;
-      color: #4a4a4a;
+      margin-top: 1.8rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2c3e50;
     }
     footer p {
-      margin: 0;
-      font-size: 0.9rem;
+      margin: 0.3rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    h2, h3 {
+      color: #16a085;
+    }
+    p, ul {
+      margin-bottom: 1.2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🧮 Stylish Proper Fraction Calculator</h1>
+    <h1>🧮 Proper Fraction Calculator</h1>
   </header>
 
   <div class="container">
-    <h2>Enter Two Proper Fractions</h2>
+    <h2>Enter Your Fractions</h2>
     <div class="input-group">
-      <label>Fraction 1: </label>
+      <label>Fraction 1:</label>
       <input type="number" id="num1" placeholder="Numerator">
       <input type="number" id="den1" placeholder="Denominator">
     </div>
     <div class="input-group">
-      <label>Fraction 2: </label>
+      <label>Fraction 2:</label>
       <input type="number" id="num2" placeholder="Numerator">
       <input type="number" id="den2" placeholder="Denominator">
     </div>
     <div class="input-group">
-      <label>Operation: </label>
+      <label>Choose Operation:</label>
       <select id="operation">
         <option value="add">Add</option>
         <option value="subtract">Subtract</option>
@@ -93,36 +104,39 @@
     <button class="btn" onclick="calculateFraction()">Calculate</button>
     <div class="result" id="result"></div>
 
-    <div style="margin-top:2rem; font-size: 1rem; line-height: 1.6;">
-      <p>
-        A proper fraction is a mathematical representation where the numerator (top number) is smaller than the denominator (bottom number). Examples include 2/5, 3/4, and 7/10. Proper fractions are commonly used in daily life to represent partial amounts, proportions, and measurements. Whether you're baking, working on a project, or helping your kids with math homework, understanding proper fractions is a fundamental skill.
-      </p>
-      <p>
-        Our Proper Fraction Calculator is designed to make working with these numbers easier and more intuitive. This tool allows you to input two proper fractions and choose a mathematical operation (addition, subtraction, multiplication, or division) to perform between them. It quickly computes the result and simplifies the fraction automatically. This saves you time, minimizes errors, and makes math tasks more enjoyable.
-      </p>
-      <p>
-        One of the standout features of our calculator is its stylish and responsive design. With a clean layout, soft shadows, elegant fonts, and gradient background, it offers a premium user experience. The interface is intuitive and optimized for all devices, from desktops to mobile phones. Whether you’re a student, teacher, or parent, you'll find it incredibly helpful and simple to use.
-      </p>
-      <p>
-        In education, proper fractions are introduced early in school and are foundational to understanding other math concepts like decimals, percentages, ratios, and algebra. Students often struggle with operations involving fractions because they require multiple steps and careful attention. Our calculator addresses this challenge by offering a reliable, step-by-step calculation engine that instantly provides the correct result.
-      </p>
-      <p>
-        For professionals and hobbyists, proper fractions are equally important. Architects and engineers use fractions to measure lengths and angles precisely. Cooks and bakers rely on fractions to divide ingredients accurately. In construction, woodworking, sewing, and many other fields, precision is crucial — and proper fractions help achieve that accuracy.
-      </p>
-      <p>
-        Another major advantage of this tool is its ability to simplify answers automatically. Often, results from fraction operations can be large or appear complicated. Simplifying these results into proper or reduced fractions makes them easier to understand and use. The calculator ensures that you always receive answers in their simplest and clearest form.
-      </p>
-      <p>
-        We’ve also included error checking to make sure inputs are valid. It alerts you if you try to divide by zero or forget to enter a number. This makes the experience smoother and prevents common mistakes.
-      </p>
-      <p>
-        Ultimately, this Proper Fraction Calculator blends style and functionality. It offers a user-friendly interface, accurate results, smart validation, and a pleasing visual experience. No need for pen and paper — just enter, click, and get the answer. Try it now and simplify your math tasks instantly!
-      </p>
-    </div>
+    <section style="margin-top:2.5rem; font-size: 1rem; line-height: 1.7;">
+      <h3>📌 What is a Proper Fraction?</h3>
+      <p>A proper fraction is a fraction where the numerator (top number) is smaller than the denominator (bottom number). These represent values less than one, such as 2/3 or 5/8. They’re frequently seen in education, recipes, and technical measurements.</p>
+
+      <h3>🛠️ Why Use This Calculator?</h3>
+      <p>This handy tool simplifies your work with proper fractions. Whether you’re studying or doing practical work, it helps add, subtract, multiply, or divide fractions quickly, giving simplified results and preventing common mistakes.</p>
+
+      <h3>✨ Features and Benefits</h3>
+      <ul>
+        <li>✔️ Perform basic arithmetic with fractions</li>
+        <li>✔️ Automatically simplifies final answers</li>
+        <li>✔️ Alerts you to invalid inputs (like 0 denominator)</li>
+        <li>✔️ Clean, modern layout optimized for any device</li>
+        <li>✔️ Great for school use, tutoring, and professional tasks</li>
+      </ul>
+
+      <h3>🎓 Educational Value</h3>
+      <p>Learning how to work with proper fractions is foundational for progressing in math. Our calculator reinforces these concepts by providing clear outputs and promoting self-learning through experimentation.</p>
+
+      <h3>💡 Real-World Applications</h3>
+      <p>Proper fractions come up in daily life: splitting food, building furniture, or converting measurements. This calculator supports accurate and fast fraction processing in all those scenarios.</p>
+
+      <h3>🔍 Smart Validation & Simplification</h3>
+      <p>No need to worry about incorrect inputs. The calculator checks for zero denominators and simplifies every result to its lowest terms—keeping things neat and user-friendly.</p>
+
+      <h3>🚀 Final Thoughts</h3>
+      <p>Use our Proper Fraction Calculator to master fraction problems quickly and confidently. It’s fast, stylish, and efficient—your go-to solution for all things fractions!</p>
+    </section>
   </div>
 
   <footer>
     <p>© 2025 Stylish Fractions Inc. | All Rights Reserved</p>
+    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/dmca">DMCA</a></p>
   </footer>
 
   <script>
